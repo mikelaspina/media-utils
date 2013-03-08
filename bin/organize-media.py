@@ -15,10 +15,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import mediaorg
+"""Usage:
+  organize-media.py FILE...
+  organize-media.py -h | --help
+  organize-media.py --version
+
+Arguments:
+  FILE  source media file path
+
+Options:
+  -h, --help  show this help message and exit
+  --version   show version and exit
+
+"""
+
+#import mediaorg
+import sys
+
+from docopt import docopt
 
 def main():
-    pass
+    args = docopt(__doc__, version='0.1')
 
 
 if __name__ == '__main__':
