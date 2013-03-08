@@ -16,3 +16,12 @@
 # limitations under the License.
 
 import mediaorg
+
+def main():
+    pass
+
+
+if __name__ == '__main__':
+    status = main()
+    sys.exit(status)
+
