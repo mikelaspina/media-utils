@@ -21,7 +21,7 @@
   organize-media.py --version
 
 Arguments:
-  FILE  source media file path
+  FILE  source media path
 
 Options:
   -h, --help  show this help message and exit
@@ -29,7 +29,7 @@ Options:
 
 """
 
-#import mediaorg
+import medialib
 import sys
 
 from docopt import docopt

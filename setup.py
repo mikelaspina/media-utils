@@ -20,16 +20,16 @@ except ImportError:
     from distutils.core import setup
 
 config = {
-    'description': 'Simple tool to organize media files to the conventions used by Plex.',
+    'description': 'Simple utilies to organize my Plex media collection.',
     'author': 'Mike LaSpina',
     'url': 'http://github.com/mikelaspina',
     'author_email': 'mike.laspina@gmail.com',
     'version': '0.1',
     'license': 'Apache 2.0',
     'install_requires': ['docopt', 'nose'],
-    'packages': ['mediaorg'],
-    'scripts': [],
-    'name': 'organize-media'
+    'packages': ['medialib'],
+    'scripts': ['organize-media.py'],
+    'name': 'media-utils'
 }
 
 setup(**config)
