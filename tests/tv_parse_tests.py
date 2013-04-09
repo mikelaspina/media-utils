@@ -48,6 +48,11 @@ class TestDateAired(object):
         'Show_Name-1900-01-02',
         'Show_Name.1900-01-02',
         'Show_Name 1900-01-02',
+        # With dash separator
+        'Show_Name_1900_01_02',
+        'Show_Name-1900_01_02',
+        'Show_Name.1900_01_02',
+        'Show_Name 1900_01_02',
         # With dot separator
         'Show_Name_1900.01.02',
         'Show_Name-1900.01.02',
