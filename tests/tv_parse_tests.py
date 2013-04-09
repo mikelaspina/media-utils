@@ -43,21 +43,38 @@ from nose.tools import *
 
 class TestDateAired(object):
     SAMPLES = [
-        # With dash separator
+        # YYYY-MM-DD
+        #   With dash separator
         'Show_Name_1900-01-02',
         'Show_Name-1900-01-02',
         'Show_Name.1900-01-02',
         'Show_Name 1900-01-02',
-        # With dash separator
+        #   With dash separator
         'Show_Name_1900_01_02',
         'Show_Name-1900_01_02',
         'Show_Name.1900_01_02',
         'Show_Name 1900_01_02',
-        # With dot separator
+        #   With dot separator
         'Show_Name_1900.01.02',
         'Show_Name-1900.01.02',
         'Show_Name.1900.01.02',
-        'Show_Name 1900.01.02'
+        'Show_Name 1900.01.02',
+        # MM-DD-YYYY
+        #   With dash separator
+        'Show_Name_01-02-1900',
+        'Show_Name-01-02-1900',
+        'Show_Name.01-02-1900',
+        'Show_Name 01-02-1900',
+        #   With dash separator
+        'Show_Name_01_02-1900',
+        'Show_Name-01_02-1900',
+        'Show_Name.01_02-1900',
+        'Show_Name 01_02-1900',
+        #   With dot separator
+        'Show_Name_01.02-1900',
+        'Show_Name-01.02-1900',
+        'Show_Name.01.02-1900',
+        'Show_Name 01.02-1900'
     ]
 
     def setUp(self):
