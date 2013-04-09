@@ -30,6 +30,13 @@ class TvParser(object):
                         (?P<month>[0-9]{2})
                         [\.\-_]
                         (?P<day>[0-9]{2})
+                        ''', re.VERBOSE),
+            re.compile(r'''
+                        (?P<month>[0-9]{2})
+                        [\.\-_]
+                        (?P<day>[0-9]{2})
+                        [\.\-_]
+                        (?P<year>(?:19|20)[0-9]{2})
                         ''', re.VERBOSE)
         ]
 
